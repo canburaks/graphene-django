@@ -20,9 +20,9 @@ class RecipeIngredientNode(DjangoObjectType):
         filter_fields = {
             'ingredient__name': ['exact', 'icontains', 'istartswith'],
             'recipe': ['exact'],
-            'recipe__name': ['icontains'],
+            'recipe__title': ['icontains'],
         }
-        filter_order_by = ['ingredient__name', 'recipe__name',]
+        filter_order_by = ['ingredient__name', 'recipe__title',]
 
 class Query(AbstractType):
     recipe = Node.Field(RecipeNode)
