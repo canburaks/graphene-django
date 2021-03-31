@@ -15,6 +15,7 @@ else:
         GlobalIDMultipleChoiceFilter,
         ListFilter,
         RangeFilter,
+        TypedFilter,
     )
 
     __all__ = [
@@ -24,4 +25,5 @@ else:
         "ArrayFilter",
         "ListFilter",
         "RangeFilter",
+        "TypedFilter",
     ]
